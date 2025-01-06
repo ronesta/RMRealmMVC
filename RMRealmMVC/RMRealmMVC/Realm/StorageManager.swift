@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import RealmSwift
 
-class StorageManager: NSObject {
+final class StorageManager: NSObject {
     static let shared = StorageManager()
 
     private override init() {
@@ -75,4 +75,3 @@ class StorageManager: NSObject {
         realm.object(ofType: RealmCharacter.self, forPrimaryKey: id)?.imageData
     }
 }
-
