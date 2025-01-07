@@ -34,4 +34,3 @@ final class CharacterTableViewDataSource: NSObject, UITableViewDataSource {
         return cell
     }
 }
-
